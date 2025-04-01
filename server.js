@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 // Conectar a SQLite
-const db = new sqlite3.Database("todo.db", (err) => {
+const db = new sqlite3.Database("todo.sqlite3", (err) => {
     if (err) {
         console.error(err.message);
     } else {
